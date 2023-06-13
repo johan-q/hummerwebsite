@@ -1,0 +1,258 @@
+<!DOCUMENT HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adopt</title>
+        <link rel="stylesheet" href="tripstyle.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    
+    </head>
+    <body>
+        <header class="header">
+            <img src="logo.jpeg" class="logo">
+        
+            <nav class="navbar">
+                <div id="nav-close" class="fas fa-times"></div>
+                <a href="home page.html">Home</a>
+                <a href="Magazine.html">Gallery</a>
+                <a href="THINGS-TO-DO.html">Dog</a>
+                <a href="#plan your trip">Adopt</a>
+                <a href="index.html">Discover</a>
+            </nav>
+        
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </header>
+
+        <div class="banner">
+            <center>
+                <!--<img class="pic" src="header07.png">-->
+                <header>ADOPT YOUR DOG</header>
+            </center>
+
+            <div class="progress-bar">
+                <ul>
+                    <li>
+                        <i class="icon uil uil-chat-bubble-user"></i>
+                        <div class="progress one">
+                            <p>1</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Information</p>
+
+                    <li>
+                        <i class="icon uil uil-kayak"></i>
+                        <div class="progress five">
+                            <p>5</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Your Dog</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="container">
+                <div class="form-frame">
+                    <form action="insert.php" method="POST">
+                        <div class="form first page-slide">
+                            <!--Personal Information-->
+                            <div class="personal information">
+                                <span class="title"><center>PERSONAL INFORMATION</center></span>
+
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="Enter name" name="full_name" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Enter email" name="email" required>
+                                    </div>
+                                    
+                                    <div class="input-field">
+                                        <label>Phone Number</label>
+                                        <input type="number" placeholder="Enter phone number" name="phone_number" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="nextBtn0 next">
+                                <span class="btnText">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="form second">
+                            <!--Number of People-->
+                            <div class="people number">
+                                <span class="title"><center>NUMBER OF DOG</center></span>
+                            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Dog</label>
+                                        <input type="number" placeholder="Enter number of dogs" name="adults" required>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn1 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+
+                                <button class="backBtn1 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form third">
+                            <!--Place-->
+                            <div class="place">
+                                <span class="title"><center>Location</center></span>
+                            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Location</label>
+                                        <select name="place" required>
+                                            <option selected hidden value="">Select your place</option>
+                                            <option>Sariaya</option>
+                                            <option>Tiaong</option>
+                                            <option>Candelaria</option>
+                                            <option>Gumaca</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn2 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+
+                                <button class="backBtn2 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form fourth">
+                            <!--Date of Booking-->
+                            <div class="booking date">
+                                <span class="title"><center>DATE OF Adoption</center></span>
+                                <div class="fields">
+
+                                    <div class="input-field">
+                                        <label>Date of Adoption</label>
+                                        <input type="date" name="departure_date" required>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="nextBtn3 next">
+                                    <span class="btnText">Next</span>
+                                </button>
+                                
+                                <button class="backBtn3 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form fifth">
+                            <!--Activities-->
+                            <div class="activities">
+                                <span class="title"><center>Dogs</center></span>
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Dogs</label>
+                                        <select name="activities" required>
+                                            <option selected hidden value="">Select your dog</option>
+                                            <option>Meldy</option>
+                                            <option>Maureen</option>
+                                            <option>Ciarisse</option>
+                                            <option>Doritia</option>
+                                            <option>Rizza</option>
+                                            <option>Carlo</option>
+                                            <option>Cristina</option>
+                                            <option>Liza</option>
+                                            <option>Jomar</option>
+                                           
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="buttons">
+                                <button class="submit">
+                                    <span class="btnText">SUBMIT</span>
+                                </button>
+
+                                <button class="backBtn4 back">
+                                    <span class="btnText">Back</span>
+                                </button>
+                            </div>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="home page.html">Home</a>
+                    <a href="Magazine.html">Gallery</a>
+                    <a href="THINGS-TO-DO.html">Activities</a>
+                    <a href="tripPlan.html">Book</a>
+                    <a href="index.html">Discover</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Axtra Links</h3>
+                    <a href="#">Ask Questions</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="https://t.me/alitaaa_kp"> <i class="fas fa-phone"></i> 09484551140 </a>
+                    <a href="https://t.me/alitaaa_kp"> <i class="fas fa-phone"></i> 09484551140 </a>
+                    <a href="https://www.google.com/search?q=Hummer%27+the+Dog+House&stick=H4sIAAAAAAAA_-NgU1IxqDA2TkoxsUxOSUq2tDS2sDS1MqhIMzYyNDawtDBLtUwyM7ZYxCrqUZqbm1qkrlCSkargkp-u4JFfWpwKAGMMPoNAAAAA&hl=en&mat=CR3NkC72mSDGElcBpsFAC7EqUi4FuLIK6Anfk_yJ3aj6zItXepqeXdOhFQfZZGlmtqCVKYCjmM1BEnnSpWz2kujXR_Ofeg-cu0-p_W0AdYrR8WVEWfbS1trphurcUBDn_Ic&authuser=2#"> <i class="fas fa-envelope"></i> hummerthedoghouse@gmail.com </a>
+                    <a href="https://www.google.com/maps/place/Sariaya,+4322+Quezon/@13.9324558,121.3081539,10.74z/data=!4m15!1m8!3m7!1s0x33bd4940187e975d:0x231e682a37c8dabf!2sSariaya,+4322+Quezon!3b1!8m2!3d13.9175333!4d121.4952128!16zL20vMDY3dzBw!3m5!1s0x33bd4940187e975d:0x231e682a37c8dabf!8m2!3d13.9175333!4d121.4952128!16zL20vMDY3dzBw?entry=ttu"> <i class="fas fa-map"></i> Sariaya Quezon </a>
+                </div>
+        
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/groups/815030810053226#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                    <a href="https://twitter.com/hummer_house?t=VogRHyW5xcyoFkIn2BF9qg&s=09"> <i class="fab fa-twitter"></i> Twitter </a>
+                    <a href="https://www.instagram.com/hummerthedoghouse/"> <i class="fab fa-instagram"></i> Instagram </a>
+                </div>
+        
+            </section>
+        
+        </div>
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="tripscript.js"></script>
+        
+    </body>
+</html>
